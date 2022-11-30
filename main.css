@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #1e1e1e;
+    background-color: #B27CF0;
+    font-weight: 400;
+  }
+
+    @font-face {
+    font-family: 'kage';
+    src: url('kage.otf');}
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 500;
+    margin-bottom: 0.5em;
+  }
+  h1,
+  .h1 {
+    font-size: 42px;
+    font-family: 'kage';
+  }
+  
+  h2,
+  .h2 {
+    font-size: 32px;
+    font-family: 'Poppins';
+    font-weight: 700;
+  }
+  
+  h3,
+  .h3 {
+    font-size: 28px;
+    font-family: 'Poppins';
+    font-weight: 600;
+
+  }
+  
+  h4,
+  .h4 {
+    font-size: 24px;
+    font-family: 'Poppins';
+    font-weight: 400;
+  }
+  
+  
+  button,
+  .btn {
+    display: inline-block;
+    padding: 1% 2%;
+    background-color: #F7E864;
+    text-decoration: none;
+    color: #231E1A;
+    border: 2px solid #231E1A;
+    border-radius: 30px;
+    line-height: 2;
+    text-transform: none;
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+  }
+  
+  button:hover,
+  .btn:hover {
+    background-color: #12F4F8;
+  }
+  
+  .btn--secondary {
+    background-color: transparent;
+    color: #231E1A;
+    border: 2px solid #231E1A;
+  }
+  .btn--secondary:hover {
+    background-color: #231E1A;
+    color: white;
+    border: 1px solid #231E1A;
+  }
+  
+  
+  code {
+    background-color: #e1e1e1;
+    font-weight: 400;
+    padding: 0 8px;
+    font-size: 0.8em;
+    font-family: 'Courier New', monospace;
+  }
+  /* ---> UTILITIES */
+  
+  /* Colors */
+  .color-ny-beige {
+    color: #F9ECD7;
+  }
+  .bg-color-ny-beige {
+    background-color: #F9ECD7;
+  }
+  
+  .bg-color-ny-highlighter {
+    background-color: #F7E864;
+  }
+
+  .bg-color-ny-lilac{
+    background-color: #B27CF0;
+  }
+  
+  .bg-color-babypink {
+    background-color: #E69EEC;
+  }
+  
+  .bg-color-babyblue {
+    background-color: #12F4F8;
+  }
+
+  .bg-color-babyblue {
+    background-color: #12F4F8;
+  }
+  
+  .color-darkestblack {
+    color: #231E1A;
+  }
+  .bg-color-darkestblack {
+    background-color: #231E1A;
+  }
+  
+
+  .bg-color-wolf {
+    background-color: #DCD5D0;
+  }
+  
+  .bg-color-white {
+    background-color: #F5F5F5;}
+  
+  
+  
+  /* Own styles, these are only for styling THIS page */
+  
+  .pattern-content {
+    max-width: 800px;
+    padding: 50px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .pattern-section {
+    margin-bottom: 64px;
+  }
+  
+  .pattern-color {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 8px;
+    margin-inline: 0px 10px;
+  }
+  
+  .pattern-color:before {
+    content: attr(data-color);
+    background-color: rgba(0,0,0,0.2);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    border-radius: 8px 8px 0px 0px;
+  }
+  
+  .pattern-title {
+    border-bottom: 1px solid #e1e1e1;
+    opacity: 0.6;
+  }
+  
+  [data-header]:before {
+    content: attr(data-header) ": ";
+  }
